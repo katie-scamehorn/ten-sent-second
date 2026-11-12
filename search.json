@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "A Demonstration of Correlation of Correlation Analysis",
+    "section": "",
+    "text": "Introduction\n\nimport pandas as pd\nimport numpy as np\n\nimport seaborn as sns\n\nsns.set_context('talk')\n\ndf = sns.load_dataset('flights')\n\nRQ: Do the number of flights increase over the years?\nAn advid traveler is looking to become a history buff and see if there is any relationship to the amount of flights over the years. They plan to look at the seaborn dataset flights that has a total of 144 trips.\n\n\nLiterature Review\n\n\nMethods\nGiven that we have two coloumns of continuous data (year and passenger) we will evalute this relationship using simple correlation analysis and also a scatter plot. These two methods are classic and tradtional starting points when evaluting data like these.\n\n\nResults\n\ncorr_val = df['year'].corr(df['passengers'])\n\nnarative = \"a very strong negative correaltion\"\n\nif corr_val &gt; 0.8: \n    narrative = \"a very strong positive correlation\"\nelif corr_val &gt; .4:\n    narrative = \"a moderate postive correaltion\"\nelif corr_val &gt; 0:\n    narrative = \"a positve but weak correlation\"\nelif corr_val &gt; -.4:\n    narrative = \"a moderate negative correaltion\"\n\nUsing the classic simple Pearson correlation approach these data produce a correltation coefficent of 0.9218238352924206, as such, given this result, we conclude that the relationship is a very strong positive correlation.\n\nimport matplotlib.pyplot as plt\n\n#| label: fig-length-width-scatter\n#| fig-cap: \"A scatterplot of petal length and petal width\"\n\nfig, ax = plt.subplots(figsize=(6, 3.5))\n\nsns.scatterplot(data = df, y = 'passengers', x = 'year')\n\nplt.ylabel('passengers')\nplt.xlabel('years')\n\n\n\n\n\n\n\n\nAs shown in ?@fig-length-width-scatter we set additional evidence of a strong positive correlation between an iris flower petal length and petal width\n\n\nDiscussions\nNow that this long standing probelm of over 10 minutes is resolved thanks to the dilgent efforts of UW Madisons DSHB program, science has once again triumphed in establishing that the relationship that there is a positive correlative relatiobship between iris petal width and iris petal length\n\n\nReferences"
+  }
+]
