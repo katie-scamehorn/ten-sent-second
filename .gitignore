@@ -1,0 +1,186 @@
+# =============================================================================
+# Quarto
+# =============================================================================
+/.quarto/
+_site/
+_freeze/
+*_files/
+*.quarto_ipynb
+.quarto_ipynb_*
+index_files/
+site_libs/
+# Uncomment the next line if you do NOT want to commit frozen computation results
+# _freeze/
+
+# =============================================================================
+# R
+# =============================================================================
+.Rhistory
+.Rapp.history
+.RData
+.Rdata
+.Ruserdata
+.Rproj.user/
+*.Rproj.user
+.httr-oauth
+*_cache/
+/cache/
+rsconnect/
+renv/library/
+renv/local/
+renv/cellar/
+renv/lock/
+renv/python/
+renv/sandbox/
+renv/staging/
+*.knit.md
+*.utf8.md
+.RData.tmp
+
+# =============================================================================
+# Python
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+develop-eggs/
+downloads/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env
+.python-version
+
+# Testing / coverage / type checking
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.ruff_cache/
+
+# Package managers
+Pipfile.lock
+poetry.lock
+.pdm-python
+.pdm-build/
+
+# =============================================================================
+# Jupyter
+# =============================================================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+.jupyter/
+.virtual_documents/
+*.nbconvert.ipynb
+profile_default/
+ipython_config.py
+
+# =============================================================================
+# IDEs and editors
+# =============================================================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# RStudio / Positron
+.Rproj.user/
+.positron/
+
+# JetBrains (PyCharm, etc.)
+.idea/
+*.iml
+
+# Vim / Emacs / Sublime
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+*.sublime-workspace
+*.sublime-project
+
+# =============================================================================
+# macOS
+# =============================================================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# =============================================================================
+# Windows
+# =============================================================================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.stackdump
+[Dd]esktop.ini
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# =============================================================================
+# Linux
+# =============================================================================
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# Logs, temp files, and secrets
+# =============================================================================
+*.log
+*.tmp
+*.temp
+*.bak
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.*
